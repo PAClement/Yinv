@@ -1,0 +1,3 @@
+light purple : #695CFE ;
+background : #E4E9F7 ;
+Gray text color : #707070 ;

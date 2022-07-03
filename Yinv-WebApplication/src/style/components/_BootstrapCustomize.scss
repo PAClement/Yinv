@@ -1,0 +1,8 @@
+$theme-colors: (
+    "primary": $light-purple,
+    "light": $background-white,
+    "danger": $red-color,
+    "secondary": $Gray-color
+);
+
+@import "~bootstrap/scss/bootstrap";

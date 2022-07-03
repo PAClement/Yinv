@@ -1,0 +1,14 @@
+.cardProduct {
+
+  border: 2px solid white;
+
+  &:hover {
+
+    border: 2px solid $light-purple;
+  }
+}
+
+.modalSuppr {
+
+  background-color: rgba(0, 0, 0, 0.8);
+}

@@ -1,0 +1,34 @@
+.homeContainer {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  flex-wrap: wrap;
+
+  background: $background-white;
+
+}
+
+.bodyCard {
+
+  margin: 0 1em;
+
+  :hover .homeIcon {
+    color: $light-purple ;
+
+  }
+
+  .cardTitle {
+
+    color: $light-purple ;
+  }
+}
+
+.homeIcon {
+
+  font-size: 3rem;
+  margin: 1rem 0 3rem 0;
+  color: $black-color;
+}
