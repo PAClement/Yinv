@@ -1,10 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { faList, faPlus, faWrench } from '@fortawesome/free-solid-svg-icons';
+import { QRCodeCanvas } from 'qrcode.react';
 
 import CardHome from '../components/HomePage/CardHome';
 
 const Home = () => {
+
+  const compagny = localStorage.getItem('userToken');
 
   const card = [{
     link: "/product",
@@ -29,6 +32,10 @@ const Home = () => {
 
         <CardHome key={target.link} link={target.link} logo={target.logo} title={target.title} subTitle={target.subTitle} />
       ))}
+      <div>
+        <QRCodeCanvas value={compagny} size={200} />
+        <h4 className='mt-5'>Scanner ce QR-Code afin de vous connecter à votre application</h4>
+      </div>
     </div>
   );
 };

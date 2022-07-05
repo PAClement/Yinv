@@ -85,10 +85,10 @@ const Product = () => {
         <>
           <p className='mt-3 fs-5'>{dataFilter.length}{dataFilter.length > 1 ? " résultats trouvés" : " résultat trouvé"}</p>
           <div className='d-flex justify-content-between align-items-start'>
-            <div className='me-3 d-flex justify-content-between flex-wrap' style={{ width: '70%' }}>
+            <div className='me-3 d-flex justify-content-evenly flex-wrap' style={{ width: '70%' }}>
               {dataFilter.length === 0 ? (
 
-                <p className='text-danger'>Aucun article n'a été trouvé</p>
+                <p className='text-danger'>Aucun produit n'a été trouvé</p>
               ) : (
 
                 <ListProduct reloadProduct={getAllProduct} category={dataCategory} brand={dataBrand} data={dataFilter} />
